@@ -1,4 +1,4 @@
-# SEO - Grouping URLs with Kmeans clustering to see important insights of your site
+# SEO - Kmeans Clustering 
 
 In this project I will show step by step how to use Google search Console data and Kmeans clustering to group your URLs depending on a specific KPI. With this you will be able to see some important insights and optimize better your site. It will also give you an overview of the site from a more analitical stand point and will help you to make data driven decisions.
 
@@ -21,7 +21,7 @@ Screaming Frog
 
 ### Getting the Data from GSC
 
-The first step we need is to get access to Google search console(https://search.google.com/search-console) for your own site.
+The first step we need is to get access to [Google search console](https://search.google.com/search-console) for your own site.
 Once in google search console we need to go to
 
 Say what the step will be
