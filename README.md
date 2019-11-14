@@ -62,7 +62,7 @@ pip install matplotlib
 
 The first two steps that we have on the script is opening the script. We need to make sure we are in the folder that our xlsx file is(The dataset we just created from GSC and Screaming frog). Once there open our file
 
-```
+```python
 #Opening xlsx
 df = pd.read_excel (r'www.uselessthingstobuy.com.xlsx')
 
@@ -73,7 +73,7 @@ After opening the file we need to decide what kind of experiment we will be doin
 
 For this we create a new Dataframe that contains the two columns we just mentioned. Title Lenght and CTR.
 
-```
+```python
 #### CTR Vs Title Length ####
 X2 = pd.DataFrame(df, columns = ['Title Length','CTR'])
 
@@ -84,7 +84,7 @@ X2 = pd.DataFrame(df, columns = ['Title Length','CTR'])
 
 Kmeans basically clusters your data in different groups. To know what is the optimal amount of clusters we need to have we run the elbow method. This will tell us based on our data what is the optimal number of clusters we should use for our data. Make sure that you are using the name that your dataframe has in our case its X2.
 
-```
+```python
 
 wcss = []
 for i in range(1, 11):
@@ -109,7 +109,7 @@ We can see that the optimal number of cluster is where the elbow is bending so i
 
 After we perform the kmean clustering with the number of clusters we got from our elbow method.
 
-```
+```python
 kmeans = KMeans(n_clusters=3).fit(X4)
 centroids = kmeans.cluster_centers_
 print(centroids)
@@ -119,7 +119,7 @@ print(centroids)
 
 Now that we have run everything we want to see our results and how our data is clustered. To plot our results we run the follwoing
 
-```
+```python
 plt.title('Impressions vs CTR for UberEats London')
 plt.scatter(df['Impressions'], df['CTR'], c= kmeans.labels_.astype(float), s=50, alpha=0.5,label = 'URLs')
 plt.scatter(centroids[:, 0], centroids[:, 1], c='red', s=50,label='Centroid')
