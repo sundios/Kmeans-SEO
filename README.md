@@ -1,4 +1,4 @@
-# SEO - Kmeans Clustering 
+# SEO - Grouping URLs with Kmeans clustering to see important insights of your site
 
 In this project I will show step by step how to use Google search Console data and Kmeans clustering to group your URLs depending on a specific KPI. With this you will be able to see some important insights and optimize better your site. It will also give you an overview of the site from a more analitical stand point and will help you to make data driven decisions.
 
@@ -21,33 +21,35 @@ Screaming Frog
 
 ### Getting the Data from GSC
 
-The first step we need is to get access to [Google search console](https://search.google.com/search-console) for your own site.
-Once in google search console we need to go to
+The first step we need is to get access to [Google Search Console](https://search.google.com/search-console) for your own site.
+Once in the console we need to go to Performance and export page a report that includes the following.
 
-Say what the step will be
+
+| URL | Clicks	| Impressions |CTR	| Position| 
+| ----| ------- | ------------| ----| --------|
+
+You can select the time frame that you want and add the necessary filterst that you think they are right for your project.
+If you want to get more data(more thn 1,000 URLs) You can try using the Google Search Console APi to make bigger requests.
+
+## Getting Title and description Lenghts
+
+Once we have the list URLs, we go to screaming frog and in mode we select list and drop our list manually.
+
+Here we would only need to export the title lengths and the description lengths. Once we get the length we can do a Vlookup and add it to our Google Search Console export we did before, the spreadsheet shoudl look like this:
+
+| URL | Title Length | Description Length | Clicks	| Impressions |CTR	| Position| 
+| ----| ------------ |------------------- | --------| ------------| ----|-------- |
+
+### Installing Python Libraries
+
+now that we have our dataset ready, we need to install some libraries that we will be suing for this.
+To install the libraries copy the following and run it in the terminal
 
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
+pip install pandas
+pip install numpy
+pip install sklearn
+pip install matplotlib
 ```
 
 ### And coding style tests
