@@ -120,7 +120,7 @@ print(centroids)
 Now that we have run everything we want to see our results and how our data is clustered. To plot our results we run the follwoing
 
 ```python
-plt.title('Impressions vs CTR for UberEats London')
+plt.title('Impressions vs CTR for UTB')
 plt.scatter(df['Impressions'], df['CTR'], c= kmeans.labels_.astype(float), s=50, alpha=0.5,label = 'URLs')
 plt.scatter(centroids[:, 0], centroids[:, 1], c='red', s=50,label='Centroid')
 plt.ylabel('CTR')
