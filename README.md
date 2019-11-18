@@ -134,3 +134,5 @@ plt.legend()
 ### Insights
 
 My data is very Shitty but we can still see that based on our graph the optimal title lenght that has high CTR are between 35 - 55 characters.
+
+To be continued
