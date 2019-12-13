@@ -135,4 +135,14 @@ plt.legend()
 
 My data is very Shitty but we can still see that based on our graph the optimal title lenght that has high CTR are between 35 - 55 characters.
 
-To be continued
+
+### Example 2 CTR v Impressions
+
+![Graph](CTR-Impressions.png)
+
+
+This example can show us how well are our pages performing in General. High impressions low CTR will means we need to do something about those pages because we are ranking well we are having impressions but users are not clicking on our results. Why? maybe bad Call to Action or something different. This could help seeing if we have a problem like that.
+
+Also in this example, we need to remove outliers. Since my data had one big outlier that had over 87K impressions I just removed it from the spreadsheet to di this graph.
+
+
