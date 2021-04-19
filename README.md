@@ -128,7 +128,7 @@ plt.xlabel('Impressions')
 plt.legend()
 ```
 
-![Graph](CTR-Length.png)
+![Graph](CTR-Lenght.png)
 
 
 ### Insights
@@ -138,7 +138,7 @@ My data is very Shitty but we can still see that based on our graph the optimal 
 
 ### Example 2 CTR v Impressions
 
-![Graph](CTR-Impr.png)
+![Graph](CTR-Impressions.png)
 
 
 This example can show us how well are our pages performing in General. High impressions low CTR will means we need to do something about those pages because we are ranking well we are having impressions but users are not clicking on our results. Why? maybe bad Call to Action or something different. This could help seeing if we have a problem like that.
